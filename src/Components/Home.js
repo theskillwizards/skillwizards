@@ -9,7 +9,7 @@ function Reasons(){
 return(
     <section className="my-5 container">
         <h2 className="titles">Why SkillWizards</h2>
-      <div className="container mentorsContainer">
+      <div className="container reasonsContainer">
         <div>
           <img  src={require('../assets/physical.png')} className="mentorsImg" alt="Physical" />
           <p>Physical Learning</p>

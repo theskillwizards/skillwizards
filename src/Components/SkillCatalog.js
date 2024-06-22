@@ -10,10 +10,10 @@ function SubCatalog({ subjects, iconPath, title }) {
   return (
     <div>
       <span>
-        <img className="mx-2" src={iconPath} width={40} height={40} alt="" />
+        <img className="me-2" src={iconPath} width={40} height={40} alt="" />
         <h6>{title}</h6>
       </span>
-      <ul className="mx-2">{result}</ul>
+      <ul className="ms-3">{result}</ul>
     </div>
   );
 }
@@ -21,7 +21,7 @@ function SubCatalog({ subjects, iconPath, title }) {
 export default function SkillCatalog() {
   return (
     <section id="skill" className="my-5 container">
-      <h2 className="titles">Skills Catalog</h2>
+      <h2 className="titles my-5">Skills Catalog</h2>
       <div className="catalog container">
         <SubCatalog
           subjects={[
@@ -48,11 +48,12 @@ export default function SkillCatalog() {
 
         <SubCatalog
           subjects={[
-            { title: "French", link: "/" },
-            { title: "German", link: "/" },
-            { title: "Spanish", link: "/" },
-            { title: "Japanese", link: "/" },
-            { title: "Chinese", link: "/" },
+            { title: "French", link: "/french" },
+            { title: "German", link: "/german" },
+            { title: "Spanish", link: "/spanish" },
+            { title: "Japanese", link: "/japanese" },
+            { title: "Chinese", link: "/chinese" },
+            { title: "Chinese", link: "/italian" },
           ]}
           iconPath={require("../assets/world.png")}
           title="World Languages"

@@ -2,8 +2,9 @@ import React from "react";
 
 function TagLine() {
   return (
-    <section style={{backgroundColor:'beige'}}>
-      <div className="TagLineSection container py-5">
+    
+    <section style={{backgroundColor:'beige'}} >
+      <div className="TagLineSection">
       <div>
         <h2> Unleashing Skills</h2>
         <h2> Creating Wizards</h2>
@@ -51,11 +52,9 @@ export default function About() {
   return (
     <>
       <TagLine></TagLine>
-
-      <AboutSections className="whoSection" sectionImgSrc={require('../assets/who.jpeg')} content={content1} title="Who We are?"></AboutSections>
-
-      <AboutSections className="visionSection" sectionImgSrc={require('../assets/vision.jpeg')} content={vision} title="VISION"></AboutSections>
-      <AboutSections className="missionSection" sectionImgSrc={require('../assets/mission.jpeg')} content={mission} title="MISSION"></AboutSections>
+      <AboutSections className="whoSection" sectionImgSrc={require('../assets/who.jpeg')} content={content1} title="WHO WE ARE?"></AboutSections>
+      <AboutSections className="visionSection" sectionImgSrc={require('../assets/vision.jpeg')} content={vision} title="OUR VISION"></AboutSections>
+      <AboutSections className="missionSection" sectionImgSrc={require('../assets/mission.jpeg')} content={mission} title="OUR MISSION"></AboutSections>
 
       <h2 className="titles">Our Mentors</h2>
       <section className="mentorsContainer">
