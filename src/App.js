@@ -5,7 +5,7 @@ import Home from "./Components/Home";
 import Footer from "./Components/Footer";
 import About from "./Components/About";
 import CourseCard from "./Components/CourseCard";
-import CourseContent, { CPP } from "./Components/CourseContent";
+import CourseContent from "./Components/CourseContent";
 
 function App() {
   const courses = [
