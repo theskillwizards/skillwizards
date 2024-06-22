@@ -1,38 +1,280 @@
-.App {
+.links{
+  color: black;
+  text-decoration: none;
+}
+
+/* HEADER SECTION */
+.navbar{
+  font-size: 1.2rem;
+  background-color: #dfe4cd;
+  -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+}
+
+/* HOME SECTION */
+.nicheSection{
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-image: url('./assets/niche.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background:
+  url('./assets/niche.jpeg');
+  border: 2px solid red;
+  padding: 3rem;
+}
+
+.heading{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 3.5rem;
+  color: #404040;
+}
+
+.btn-5,
+.btn-5 *,
+.btn-5 :after,
+.btn-5 :before,
+.btn-5:after,
+.btn-5:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-5 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  appearance: button;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 34%, rgba(0,212,255,1) 100%);
+  /* background-color: #000; */
+  background-image: none;
+  color: #000000;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-5:disabled {
+  cursor: default;
+}
+.btn-5:-moz-focusring {
+  outline: auto;
+}
+.btn-5 svg {
+  display: block;
+}
+.btn-5 [hidden] {
+  display: none;
+}
+.btn-5 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.3rem 0.6rem;
+  position: relative;
+}
+.btn-5 span {
+  mix-blend-mode: difference;
+}
+.btn-5:before {
+  --tilt: 1.2rem;
+  background: #ff0202;
+  -webkit-clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+  content: "";
+  display: block;
+  height: 100%;
+  left: calc(-100% - var(--tilt));
+  position: absolute;
+  top: 0;
+  transform: translateX(var(--progress, 0));
+  transition: transform 0.3s ease;
+  width: calc(100% + var(--tilt));
+}
+.btn-5:hover:before {
+  --progress: 100%;
+}
+
+.btn-5:hover{
+  /* background: transparent; */
+  border-color: red;
+  color: rgb(255, 255, 255);
+}
+
+/* SKILL CATALOG */
+.catalog{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.catalog div span{
+  display: flex;
+  width: max-content;
+  flex-direction: row;
+  gap: 5px;
+}
+/* .catalog ul{
+  display: flex;
+  flex-wrap: wrap;
+} */
+.catalog ul li{
+  list-style-type: none;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin:5px;
+  padding: 3px 10px;
+  width: max-content;
+}
+
+
+/* About Design */
+.TagLineSection{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutLogoImg{
+  width: 10rem;
+border:10px solid gray ;
+padding: 5px;
+border-top-right-radius: 25%;
+border-bottom-left-radius: 25%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.titles{
+  font-size: 1.5rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.whoSection,.visionSection,.missionSection{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.visionSection{
+  flex-direction: row-reverse;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mentorsContainer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+}
+.mentorsContainer div{
+  margin: 5px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mentorsContainer p{
+  font-weight: bolder;
+  margin: 15px 0;
+  line-height: 10px;
+}
+
+.mentorsImg{
+object-fit: cover;
+border-radius: 50%;
+min-width:100px;
+max-width: 200px;
+}
+/* About Design */
+
+
+/* Footer Design */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer__content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.footer__links li {
+  margin-right: 20px;
+}
+
+.footer__links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.btn-5{
+  font-size: 0.8rem;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .heading{
+      font-size: 5rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
 }
