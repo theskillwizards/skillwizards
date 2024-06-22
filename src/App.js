@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-// import Navbar from "./Components/Navbar";
+import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Footer from "./Components/Footer";
 import About from "./Components/About";
@@ -86,7 +86,7 @@ function App() {
   const lifeCatalog = [courses[4]];
   return (
     <BrowserRouter>
-      {/* <Navbar /> */}
+      <Navbar />
       <main>
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
