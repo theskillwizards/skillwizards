@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/skillwizards/static/css/main.f855e6bc.css",
+    "main.js": "/skillwizards/static/js/main.7cf4b157.js",
+    "static/js/453.726341da.chunk.js": "/skillwizards/static/js/453.726341da.chunk.js",
+    "static/media/logo.svg": "/skillwizards/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/skillwizards/index.html",
+    "main.f855e6bc.css.map": "/skillwizards/static/css/main.f855e6bc.css.map",
+    "main.7cf4b157.js.map": "/skillwizards/static/js/main.7cf4b157.js.map",
+    "453.726341da.chunk.js.map": "/skillwizards/static/js/453.726341da.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.7cf4b157.js"
+  ]
+}
